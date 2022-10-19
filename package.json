@@ -1,0 +1,18 @@
+{
+  "name": "tars-quality",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "devDependencies": {
+    "@nrwl/cli": "15.0.0",
+    "@nrwl/js": "15.0.0",
+    "@nrwl/nest": "^15.0.0",
+    "@nrwl/nx-cloud": "latest",
+    "@nrwl/react": "^15.0.0",
+    "@nrwl/workspace": "15.0.0",
+    "nx": "15.0.0",
+    "prettier": "^2.6.2",
+    "typescript": "~4.8.2"
+  }
+}
