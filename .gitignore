@@ -37,3 +37,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+gravitee/apim-gateway/logs/gravitee.log
+gravitee/apim-management-api/logs/gravitee-upgraders.log
+gravitee/apim-management-api/logs/gravitee.log
+*.log
+gravitee/elasticsearch/data
+gravitee/mongodb/data
