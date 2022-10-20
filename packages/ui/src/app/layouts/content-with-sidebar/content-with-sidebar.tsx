@@ -23,6 +23,7 @@ import { CSSObject, styled, Theme, useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
+import BreadCrumb from '../../components/bread-crumb/bread-crumb';
 
 const drawerWidth = 240;
 
@@ -211,6 +212,7 @@ export default function ContentWithSidebar() {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
+        <BreadCrumb />
         <Outlet />
       </Box>
     </Box>
