@@ -1,5 +1,4 @@
-import { Breadcrumbs } from '@mui/material';
-import Link from '@mui/material/Link';
+import { Breadcrumbs, Typography } from '@mui/material';
 import { useLocation } from 'react-router-dom';
 import { capitalizeFirstLetter } from '../../utils/string-utils';
 
@@ -11,12 +10,11 @@ export function BreadCrumb(props: BreadCrumbProps) {
   const splittedLocations = location.pathname
     .split('/')
     .filter((p) => p.length > 0);
+  if (splittedLocations.length === 0) splittedLocations.push('home');
   return (
     <Breadcrumbs aria-label="breadcrumb">
       {splittedLocations.map((loc) => (
-        <Link underline="hover" color="inherit" href={loc} key={loc}>
-          {capitalizeFirstLetter(loc)}
-        </Link>
+        <Typography>{capitalizeFirstLetter(loc)}</Typography>
       ))}
     </Breadcrumbs>
   );
