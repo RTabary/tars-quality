@@ -43,3 +43,4 @@ gravitee/apim-management-api/logs/gravitee.log
 *.log
 gravitee/elasticsearch/data
 gravitee/mongodb/data
+keycloak/data
