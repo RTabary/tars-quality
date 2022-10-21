@@ -44,3 +44,5 @@ gravitee/apim-management-api/logs/gravitee.log
 gravitee/elasticsearch/data
 gravitee/mongodb/data
 keycloak/data
+postgres/data
+packages/api/.env
